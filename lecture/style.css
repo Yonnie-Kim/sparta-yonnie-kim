@@ -1,0 +1,18 @@
+.wrap {
+  width: 300px;
+  margin: auto;
+}
+.mytitle {
+  /* 배경이미지 꾸미기 */
+  background-color: greenyellow;
+  color: white;
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  padding-top: 40px;
+
+  background-image: url("https://www.ancient-origins.net/sites/default/files/field/image/Agesilaus-II-cover.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}

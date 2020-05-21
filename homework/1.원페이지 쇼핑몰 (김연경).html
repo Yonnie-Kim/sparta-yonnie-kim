@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300&family=Song+Myung&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      .wrap {
+        width: 35%;
+        margin: 10px auto 10px auto;
+      }
+      .order {
+        text-align: center;
+      }
+      * {
+        font-family: "Noto Serif KR", serif;
+        color: #4c4c4c;
+      }
+      .product-name {
+        font-family: "Song Myung", serif;
+        font-size: 200%;
+        color: black;
+      }
+      .product-description {
+        color: black;
+      }
+    </style>
+
+    <title>김연경 1주차 숙제 | 원페이지 쇼핑몰</title>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div class="product">
+        <img
+          src="https://search.pstatic.net/common/?src=https%3A%2F%2Fditto-phinf.pstatic.net%2F20200416_41%2F1587022147787OBpJh_JPEG%2F6f57662f36ea72ad2383a6c0e82597b1.jpeg&type=o&size=428x322"
+          alt=""
+        />
+        <p>
+          <span class="product-name">이솝 로즈 오 드 퍼퓸 </span>
+          <span class="product-price">가격: 180,000 / 개</span>
+        </p>
+        <p>
+          장미 향이지만 활기찬 시소 향, 우드, 스파이스, 흙내음, 가벼운 스모크가
+          더해진 미묘하고 풍성한 노트로 부드러우면서 강렬한 향수
+        </p>
+        <hr />
+        <p class="product-description">향</p>
+        <p>플로럴, 그린, 우디</p>
+        <hr />
+        <p class="product-description">타입</p>
+        <p>이솝 향수에는 성별의 경계가 없습니다.</p>
+        <hr />
+      </div>
+
+      <div class="order">
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >주문자 이름</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <label class="input-group-text" for="inputGroupSelect01"
+              >수량</label
+            >
+          </div>
+          <select class="custom-select" id="inputGroupSelect01">
+            <option selected>-- 수량을 선택하세요 --</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select>
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >주소</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="inputGroup-sizing-default"
+              >전화번호</span
+            >
+          </div>
+          <input
+            type="text"
+            class="form-control"
+            aria-label="Default"
+            aria-describedby="inputGroup-sizing-default"
+          />
+        </div>
+        <button
+          type="button"
+          class="btn btn-primary"
+          onclick="alert('주문이 완료되었습니다.')"
+        >
+          주문하기
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
