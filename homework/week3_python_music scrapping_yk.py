@@ -17,14 +17,11 @@ songs = soup.select(
 print(len(songs))  # 50개 (1페이지)
 
 for song in songs:
-    rank = song.select_one('td.number').text.split('\n')[0]  # n계단 상승/하강 내용 삭제
-    '''
-    rank = song.select_one('td.number').span.decompose().text
+    rank_raw = song.select_one('td.number')
+    # decompse는 return값 없이 동작만 시키는 함수이기 때문에 chain(.)으로 쭉 연결시키면 작동하지 않음.
+    rank_raw.span.decompose()
+    rank = rank_raw.text.strip()
 
-    https://studyforus.com/innisfree/650714
-    td.number 에서 text를 선택해오면 상승, 하강 등 텍스트가 따라와서, 숫자부분만 따오려고
-    검색해서 decompose라는 함수를 찾긴 했는데.. 실행 시 None을 출력해서 에러가 발생하네요! 어떻게 고치면 될까요?
-    '''
     title = song.select_one(
         'td.info > a.title.ellipsis').text.strip()  # 앞뒤 공백 삭제
     singer = song.select_one('td.info > a.artist.ellipsis').text
